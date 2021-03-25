@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>Título da página</title>
+</head>
+<body>
+  <script>
+  var MyList = [0,1,2,3,4,5];
+  console.log(MyList); // Return -> (6) [0,1,2,3,4,5]
+  console.log(MyList[1]); // Return -> 1 // Why 1? Why 1 is number of position in vector with number 1 in array
+  console.log(MyList.length); // Return -> 6, Why 6? Why 6 is a number total of elements inside of array
+  console.log(MyList.pop()); // Return -> 5, Why 5? Why 5 is the last element in array, this function remove element of array
+  console.log(MyList.slice(0,1)); // Return -> 0,1 , why i select to print position vector 0 to 1
+  console.log(MyList.join("-"); // Return -> "[0-1-2-3-4-5]", convert array to string and replace separator
+  console.log(MyList.includes(0)); // Return True -> Verify if 0 exists in array, 0 exists in array
+  console.log(MyList.includes(55)); // Return False -> Verify if 0 exists in array, 55 not exists in array
+  console.log(MyList.indexOf(1)); // Return 1, this function find position of value inside vector of array
+    
+  var Persons = [
+              {
+              name:"Koenomatachi San",
+              age:"20 Years"
+              },
+              {
+              name:"Mother Of Koenomatachi San",
+              age:"X Years"
+              },
+              ]
+  console.log(Persons[0]); // Return array with position 0 in vector, regarding to Koenomatachi San info
+  console.log(Persons[1]); // Return array with position 1 in vector, regarding to mother of Koenomatachi San info
+    
+  delete Persons[0]; // Remove koenomatachi san ( posiction 0 in vector ) for Persons
+  Persons.push({
+    name:"Father of Koenomatachi San",
+    age:"X Years"
+  }); // Insert father of konomatachi san inside array
+  
+  Persons[0]['name'] = "Koenomatachi San Renamed" // Update data of user by vector position and key name to update
+  
+   
+    
+  </script>
+Conteúdo da página
+</body>
+</html>
